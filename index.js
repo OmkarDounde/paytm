@@ -119,7 +119,7 @@ app.post("/callback", (req, res) => {
            console.log(">>>>>".response)
            var _results = JSON.parse(response);
            /* where it will come back after payment*/
-           res.redirect(`https://marketresearchpaytm.onrender.com/viewBooking?status=${_results.STATUS}&ORDERID=${_results.ORDERID}&date=${_results.TXNDATE}&bank=${_results.BANKNAME}`)
+           res.redirect(`https://singular-speculoos-8a0612.netlify.app/viewBooking?status=${_results.STATUS}&ORDERID=${_results.ORDERID}&date=${_results.TXNDATE}&bank=${_results.BANKNAME}`)
            });
        });
 
